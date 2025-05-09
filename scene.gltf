@@ -1,124 +1,161 @@
 {
   "accessors": [
     {
-      "bufferView": 1,
+      "bufferView": 2,
       "componentType": 5126,
-      "count": 18752,
+      "count": 2137,
       "max": [
-        0.5089175701141357,
-        0.5093079209327698,
-        0.5092101693153381
+        27.999998092651367,
+        19.0,
+        2.0
       ],
       "min": [
-        -0.5089175701141357,
-        -0.5093079209327698,
-        -0.5092101693153381
-      ],
-      "type": "VEC3"
-    },
-    {
-      "bufferView": 1,
-      "byteOffset": 225024,
-      "componentType": 5126,
-      "count": 18752,
-      "max": [
-        0.9999034404754639,
-        0.9999947547912598,
-        0.999997615814209
-      ],
-      "min": [
-        -0.9999035596847534,
-        -0.9999948740005493,
-        -0.999997615814209
+        -26.999998092651367,
+        -18.0,
+        -2.0
       ],
       "type": "VEC3"
     },
     {
       "bufferView": 2,
+      "byteOffset": 25644,
       "componentType": 5126,
-      "count": 18752,
+      "count": 2137,
       "max": [
-        1.0,
         1.0,
         1.0,
         1.0
       ],
       "min": [
-        0.0,
-        0.0,
-        0.0,
-        1.0
+        -1.0,
+        -1.0,
+        -1.0
       ],
-      "type": "VEC4"
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 2137,
+      "max": [
+        0.5625,
+        0.875
+      ],
+      "min": [
+        0.0,
+        0.0
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 17096,
+      "componentType": 5126,
+      "count": 2137,
+      "max": [
+        0.5625,
+        0.875
+      ],
+      "min": [
+        0.0,
+        0.0
+      ],
+      "type": "VEC2"
     },
     {
       "bufferView": 0,
       "componentType": 5125,
-      "count": 103680,
+      "count": 3216,
       "type": "SCALAR"
     }
   ],
   "asset": {
     "extras": {
-      "author": "primavera (https://sketchfab.com/primavera)",
+      "author": "alina_dreiman (https://sketchfab.com/alina_dreiman)",
       "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
-      "source": "https://sketchfab.com/3d-models/soccer-ball-2b74e98be6834219b9e3cb533d558d2d",
-      "title": "soccer ball"
+      "source": "https://sketchfab.com/3d-models/bar-sign-board-9c350441b24a44deb924487a92b52b33",
+      "title": "\"BAR\" sign board"
     },
-    "generator": "Sketchfab-12.71.0",
+    "generator": "Sketchfab-15.5.0",
     "version": "2.0"
   },
   "bufferViews": [
     {
       "buffer": 0,
-      "byteLength": 414720,
+      "byteLength": 12864,
       "name": "floatBufferViews",
       "target": 34963
     },
     {
       "buffer": 0,
-      "byteLength": 450048,
-      "byteOffset": 414720,
-      "byteStride": 12,
+      "byteLength": 34192,
+      "byteOffset": 12864,
+      "byteStride": 8,
       "name": "floatBufferViews",
       "target": 34962
     },
     {
       "buffer": 0,
-      "byteLength": 300032,
-      "byteOffset": 864768,
-      "byteStride": 16,
+      "byteLength": 51288,
+      "byteOffset": 47056,
+      "byteStride": 12,
       "name": "floatBufferViews",
       "target": 34962
     }
   ],
   "buffers": [
     {
-      "byteLength": 1164800,
+      "byteLength": 98344,
       "uri": "scene.bin"
+    }
+  ],
+  "extensionsUsed": [
+    "KHR_materials_unlit"
+  ],
+  "images": [
+    {
+      "uri": "textures/Content-Material_baseColor.png"
+    },
+    {
+      "uri": "textures/Content-Material_emissive.png"
     }
   ],
   "materials": [
     {
       "doubleSided": true,
-      "name": "principledshader",
+      "emissiveFactor": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emissiveTexture": {
+        "index": 1,
+        "texCoord": 1
+      },
+      "extensions": {
+        "KHR_materials_unlit": {}
+      },
+      "name": "Content-Material",
       "pbrMetallicRoughness": {
-        "metallicFactor": 0.0,
-        "roughnessFactor": 0.9577051494623774
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicFactor": 0.0
       }
     }
   ],
   "meshes": [
     {
-      "name": "geo1_principledshader_0",
+      "name": "Object_0",
       "primitives": [
         {
           "attributes": {
-            "COLOR_0": 2,
             "NORMAL": 1,
-            "POSITION": 0
+            "POSITION": 0,
+            "TEXCOORD_0": 2,
+            "TEXCOORD_1": 3
           },
-          "indices": 3,
+          "indices": 4,
           "material": 0,
           "mode": 4
         }
@@ -131,21 +168,21 @@
         1
       ],
       "matrix": [
-        0.39389726519584656,
-        2.040932900900831e-16,
-        -0.9191544651985168,
+        1.0,
         0.0,
-        -0.9191544651985168,
-        8.746276263146203e-17,
-        -0.39389726519584656,
+        0.0,
+        0.0,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
         0.0,
         0.0,
         1.0,
         2.220446049250313e-16,
         0.0,
-        2.8325903844717004e-09,
-        5.020182117891355e-25,
-        -2.2608890315467534e-09,
+        0.0,
+        0.0,
+        0.0,
         1.0
       ],
       "name": "Sketchfab_model"
@@ -154,41 +191,67 @@
       "children": [
         2
       ],
+      "name": "root"
+    },
+    {
+      "children": [
+        3
+      ],
       "matrix": [
-        0.009999999776482582,
+        1.0,
         0.0,
         0.0,
         0.0,
         0.0,
+        2.220446049250313e-16,
+        1.0,
         0.0,
-        0.009999999776482582,
         0.0,
-        0.0,
-        -0.009999999776482582,
-        0.0,
+        -1.0,
+        2.220446049250313e-16,
         0.0,
         0.0,
         0.0,
         0.0,
         1.0
       ],
-      "name": "mesh.fbx"
-    },
-    {
-      "children": [
-        3
-      ],
-      "name": "RootNode"
+      "name": "GLTF_SceneRootNode"
     },
     {
       "children": [
         4
       ],
-      "name": "geo1"
+      "matrix": [
+        -1.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "_0"
     },
     {
       "mesh": 0,
-      "name": "geo1_principledshader_0"
+      "name": "Object_4"
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9728,
+      "minFilter": 9728,
+      "wrapS": 33071,
+      "wrapT": 33071
     }
   ],
   "scene": 0,
@@ -198,6 +261,16 @@
       "nodes": [
         0
       ]
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
+    },
+    {
+      "sampler": 0,
+      "source": 1
     }
   ]
 }
